@@ -135,7 +135,7 @@ export class Clock extends Component {
     }
   }
 
-  componentWasCreated() {
+  componentDidMount() {
     this.element.addEventListener('click', this)
     this.getDrawingContext();
     this.interval = setInterval(() => {
